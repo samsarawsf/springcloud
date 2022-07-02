@@ -70,4 +70,12 @@ public class PaymentController {
         });
         return this.discoveryClient;
     }
+
+
+
+    @RequestMapping(value = "zk")
+    public String paymentZk() {
+        return "SpringCloud with zookeeper:" + serverPort + "\t" + UUID.randomUUID().toString();
+    }
+
 }
