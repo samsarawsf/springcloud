@@ -80,4 +80,9 @@ public class PaymentController {
         }
         return serverPort;
     }
+
+    @GetMapping("/lb")
+    public String paymentLibTest(){
+        return serverPort;
+    }
 }
